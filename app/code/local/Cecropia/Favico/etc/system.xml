@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Cecropia Favico Extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @version     1.0.0
+ * @category    Cecropia
+ * @package     Cecropia_Favico
+ * @author      Mohammed NAHHAS <m.nahhas@live.fr>
+ * @copyright   Copyright (c) 2014 Mohammed NAHHAS
+ * @licence     OSL - Open Software Licence 3.0
+ *
+ */
+
+/**
+ * System XML
+ */
+-->
+<config>
+    <tabs>
+        <cecropia translate="label">
+            <label>Cecropia Extensions</label>
+            <sort_order>111</sort_order>
+        </cecropia>
+    </tabs>
+    <sections>
+        <favico translate="label" module="cecropia_favico">
+            <label>Favicon Notification</label>
+            <tab>cecropia</tab>
+            <sort_order>30</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <!-- General Configuration -->
+                <general translate="label" module="cecropia_favico">
+                    <label>General Configuration</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <enabled translate="label" module="cecropia_favico">
+                            <label>Enable Favicon Notification</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </enabled>
+                        <bg_color translate="label comment" module="cecropia_favico">
+                            <label>Background Color</label>
+                            <comment>This will be the favicon's background color</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>color</frontend_class>
+                            <frontend_model>cecropia_favico/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </bg_color>
+                        <text_color translate="label comment" module="cecropia_favico">
+                            <label>Text Color</label>
+                            <comment>This will be the favicon's text color</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>color</frontend_class>
+                            <frontend_model>cecropia_favico/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </text_color>
+                        <font_style translate="label comment" module="cecropia_favico">
+                            <label>Texte Color</label>
+                            <comment>Favicon font style</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>cecropia_favico/system_config_source_fontStyle</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </font_style>
+                        <type translate="label comment" module="cecropia_favico">
+                            <label>Type</label>
+                            <comment>Favicon badge shape</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>cecropia_favico/system_config_source_type</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </type>
+                        <position translate="label comment" module="cecropia_favico">
+                            <label>Position</label>
+                            <comment>Favicon badge position</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>cecropia_favico/system_config_source_position</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </position>
+                        <animation translate="label comment" module="cecropia_favico">
+                            <label>Animation</label>
+                            <comment>Favicon badge animation type</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>cecropia_favico/system_config_source_animation</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </animation>
+                    </fields>
+                </general>
+            </groups>
+        </favico>
+    </sections>
+</config>
