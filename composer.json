@@ -1,0 +1,16 @@
+{
+    "name":"maverick/magento-favico",
+    "type":"magento-module",
+    "license":"OSL-3.0",
+    "homepage":"https://github.com/maverick193/magento-favico",
+    "description":"Magento Favico Extension",
+    "require":{
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"Mohammed NAHHAS",
+            "email":"m.nahhas@live.fr"
+        }
+    ]
+}
