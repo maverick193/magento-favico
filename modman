@@ -1,0 +1,7 @@
+# Cecropia_Favico modman file
+
+app/code/local/Cecropia/Favico app/code/local/Cecropia/Favico
+app/etc/modules/Cecropia_Favico.xml app/etc/modules/Cecropia_Favico.xml
+app/design/frontend/base/default/layout/cecropia/favico.xml    app/design/frontend/base/default/layout/cecropia/favico.xml
+app/design/frontend/base/default/template/cecropia/favico/main.phtml	app/design/frontend/base/default/template/cecropia/favico/main.phtml
+js/cecropia/favico	js/cecropia/favico

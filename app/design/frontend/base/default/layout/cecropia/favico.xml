@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Cecropia Favico Extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @version     1.0.0
+ * @category    Cecropia
+ * @package     Cecropia_Favico
+ * @author      Mohammed NAHHAS <m.nahhas@live.fr>
+ * @copyright   Copyright (c) 2014 Mohammed NAHHAS
+ * @licence     OSL - Open Software Licence 3.0
+ *
+ */
+
+/**
+ * Layout XML
+ */
+-->
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addJs"><script>cecropia/favico/jquery-1.10.1.min.js</script></action>
+            <action method="addJs"><script>cecropia/favico/jquery.noconflict.js</script></action>
+            <action method="addJs"><script>cecropia/favico/favico-0.3.4.min.js</script></action>
+        </reference>
+        <reference name="before_body_end">
+            <block name="cecropia_favico" type="cecropia_favico/main" template="cecropia/favico/main.phtml"/>
+        </reference>
+    </default>
+</layout>
